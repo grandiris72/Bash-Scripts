@@ -15,9 +15,11 @@ ansible-galaxy collection install community.aws
 ansible-galaxy collection install amazon.aws
 ansible-galaxy collection install newrelic.newrelic-infra
 
+# save Ansible playbooks
 wget https://raw.githubusercontent.com/grandiris72/ansible-playbooks/main/createawsec2instance.yml
 wget https://raw.githubusercontent.com/grandiris72/ansible-playbooks/main/aws_ec2.yaml
 
+#replace default Ansible config with preconfigured
 echo replacing ansible config
 cd /etc/ansible
 sudo rm -rf ansible.cfg
