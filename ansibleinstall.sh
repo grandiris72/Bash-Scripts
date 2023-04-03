@@ -13,7 +13,7 @@ pip3 install botocore boto3 ansible
 # Install Ansible collections
 ansible-galaxy collection install community.aws
 ansible-galaxy collection install amazon.aws
-ansible-galaxy collection install newrelic.newrelic-infra
+ansible-galaxy install newrelic.newrelic-infra
 
 # save Ansible playbooks
 wget https://raw.githubusercontent.com/grandiris72/ansible-playbooks/main/createawsec2instance.yml
