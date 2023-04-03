@@ -7,8 +7,8 @@ sudo add-apt-repository -y ppa:ansible/ansible
 sudo apt-get update
 
 # Install necessary packages
-sudo apt-get install -y software-properties-common python3-pip
-sudo pip3 install botocore boto3 ansible
+apt-get install -y software-properties-common python3-pip
+pip3 install botocore boto3 ansible
 
 # Install Ansible collections
 ansible-galaxy collection install community.aws
