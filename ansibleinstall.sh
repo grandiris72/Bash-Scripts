@@ -19,6 +19,10 @@ ansible-galaxy install newrelic.newrelic-infra
 wget https://raw.githubusercontent.com/grandiris72/ansible-playbooks/main/createawsec2instance.yml
 wget https://raw.githubusercontent.com/grandiris72/ansible-playbooks/main/aws_ec2.yaml
 
+# generate ansible.cfg file
+
+ansible-config init --disabled -t all > ansible.cfg
+
 #replace default Ansible config with preconfigured
 echo replacing ansible config
 cd /etc/ansible
